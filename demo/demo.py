@@ -14,7 +14,8 @@ def txt_handle(path):
             for line in f:
                 aa = line.split(" ")
                 aa = [x.strip() for x in aa] # 删除列表中的换行符 \n
-                total_[img_].append(aa)
+                if aa[0] == '0':
+                    total_[img_].append(aa)
     return total_
 
 path = "./labels"
